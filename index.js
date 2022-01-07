@@ -7,7 +7,7 @@ async function leerRecursos() {
 
     let { data: recursos, error } = await _supabase
     .from('recursos')
-    .select('id, name')
+    .select()
 
     console.log(recursos);
 
