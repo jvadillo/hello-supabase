@@ -9,10 +9,10 @@ async function leerRecursos() {
     .from('recursos')
     .select()
 
+    let elements = "";
     console.log(recursos);
     recursos.forEach((recurso) => {
-        console.log(recurso.name);
-        let elements = "";
+        
         elements += createReosourceItem(
           recurso.name,
           recurso.description,
