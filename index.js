@@ -5,7 +5,7 @@ const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function leerRecursos() {
 
-    let { data: recursos, error } = await supabase
+    let { data: recursos, error } = await _supabase
     .from('recursos')
     .select('id')
 
