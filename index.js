@@ -10,6 +10,21 @@ async function leerRecursos() {
     .select()
 
     console.log(recursos);
+    recursos.forEach((recurso) => {
+        console.log(recurso.name);
+        let elements = "";
+        elements += createReosourceItem(
+          recurso.name,
+          recurso.description,
+          recurso.category,
+          recurso.website);
+      });
+      /*console.log(elements);
+      const app = document.getElementById("elements");
+      app.innerHTML = elements;*/
+}
+
+function createReosourceItem(name, description, category, website){
 
 }
 
